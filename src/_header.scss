@@ -1,0 +1,90 @@
+.header {
+    background-image: url(../img/bg1.jfif);
+    background-position: center top;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+
+    h2 {
+        width: 100%;
+
+        font: {
+            family: $yeseva;
+            size: 90px
+        }
+        
+        padding: 212px 185px 169px;
+        
+        text-shadow: 2px 2px 0px #000;
+        text-align: center;
+        
+        color: $color1;
+    }
+
+    h2::after {
+        content: url(../img/decoration\ 3\ 2.svg);
+        display: block;
+        clear: both;
+    }
+
+    .btn {
+        margin-bottom: 63px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    button {
+        width: 218px;
+        line-height: 180%;
+        margin: 0 17px;
+        height: 80px;
+        
+        font: {
+            family: $lato;
+            size: 18px
+        }
+
+        color: $color1;
+        background-color: rgba(255, 255, 255, 0.6);
+        border: 1px solid $color1;
+        
+    }
+
+    
+    @include media (768px) {
+        width: 100%;
+        
+        h2 {
+            padding: 268px 30px 146px;
+        }
+
+        .btn {
+            width: 90%;
+            justify-content: center;
+            margin-bottom: 100px;
+        }
+
+        .btn button:first-child {
+            margin-bottom: 37px;
+        }
+
+        button {
+            width: 334px;
+
+        }
+
+    }
+
+    @include media (576px) {
+        h2 {
+            padding: 289px 30px 184px;
+            font-size: 48px;
+        }
+        
+        button {
+            width: 368px;
+        }
+    }
+}

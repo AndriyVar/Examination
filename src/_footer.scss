@@ -1,0 +1,88 @@
+.footer {
+    background-color: $color3;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    padding: 50px 72px;
+    color: $color1;
+    text-align: center;
+
+    .footer_item {
+        width: calc(100% / 3 - 34px);
+
+        h3 {
+            font: {
+                family: $yeseva;
+                size: 21px;
+                weight: 400;
+            }
+        }
+
+        h3::after {
+            content: url(../img/decoration\ 4\ 2\ \(2\).svg);
+            display: block;
+            margin-top: 24px;
+            clear: both;
+        }
+
+        p {
+            font: {
+                family: $lato;
+                size: 16px;
+            }
+            line-height: 180%;
+        }
+    }
+
+    .first_item {
+        p {
+            margin-top: 58px;
+        }
+    }
+
+    .second_item {
+        .text {
+            margin: 37px 0 20px;
+        }
+    }
+
+    .third_item {
+        p {
+            padding: 30px 80px;
+            font-weight: 700;
+        }
+    }
+}
+
+@include media (768px) {
+    .footer {
+        flex-wrap: wrap;
+        .footer_item {
+            width: 100%;
+        }
+
+        .second_item {
+            margin-top: 75px;
+            margin-bottom: 75px;
+        }
+    }
+}
+
+@include media (576px) {
+    .footer {
+        .first_item {
+            display: none;
+        }
+
+        .second_item {
+            margin-top: 0;
+            margin-bottom: 200px;
+        }
+
+        .third_item {
+            p {
+                padding: 30px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,150 @@
+.contact {
+    background-image: linear-gradient( #F4F2F2, #ffffff), url(../img/bg2.jfif);
+    background-blend-mode: lighten;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    padding: 100px 75px;
+    justify-content: space-between;
+    text-align: center;
+    
+    .contact_item {
+        width: 50%;
+    }
+
+    .gallery {
+        // margin-right: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: calc(50% - 15px);
+        }
+    }
+
+    .appetisers {
+
+        padding: 0 60px;
+
+        h3 {
+            font: {
+                family: $yeseva;
+                size: 36px;
+                weight: 400;
+            }
+
+            color: $color2;
+            margin-bottom: 40px;
+        }
+
+        h3::after {
+            content: url(../img/decoration\ 4\ 2.svg);
+            display: block;
+            clear: both;
+        }
+
+        p {
+            font: {
+                family: $lato;
+                size: 16px;
+            }
+
+            margin-bottom: 30px;
+        }
+        
+        form {
+            
+            margin-top: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .form_item {
+                width: 50%;
+            
+            label {
+                display: block;
+                text-align: start;
+                color: $color2;
+                font: {
+                    family: $lato;
+                    size: 14px;
+                    weight: 700;
+                }
+            }
+            
+            input {
+                display: block;
+                width: calc(100% - 20px);
+                background-color: $color1;
+                border: 1px solid $color5;
+                outline: none;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+    
+            input:focus {
+                border: 1px solid $color2;
+            }
+    
+        }
+
+        button {
+            cursor: pointer;
+            width: 50%;
+            
+            font: {
+                family: $lato;
+                size: 14px;
+            }
+
+            background-color: $color2;
+            color: $color1;
+            padding: 10px 62px;
+            border: none;
+
+        }
+        }
+    }
+
+}
+
+@include media (1100px) {
+    .contact {
+        flex-wrap: wrap;
+        padding: 100px 30px;
+
+        .contact_item {
+            width: 100%;
+        }
+
+        .gallery {
+            margin-bottom: 76px;
+        }
+
+        .appetisers {
+            padding: 0;
+        }
+    }
+}
+
+@include media (600px) {
+    .contact {
+        .gallery {
+            display: none;
+        }
+
+        form {
+            .form_item {
+                width: 100% !important;
+
+                input {
+                    width: 100% !important;
+                }
+            }
+            
+            button {
+                width: 100% !important;
+            }
+        }
+    }
+}

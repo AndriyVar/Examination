@@ -1,0 +1,114 @@
+.menu {
+    background-image: linear-gradient(#F4F2F2, #ffffff), url(../img/bg4.png);
+    background-blend-mode: color-dodge;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    flex-wrap: wrap;
+    padding: 100px 75px;
+    justify-content: space-evenly;
+
+    .col {
+        width: calc(50% - 60px);
+    }
+
+    .menu_item {
+
+        h3 {
+            color: $color2;
+            text-align: center;
+            
+            font: {
+                family: $yeseva;
+                size: 36px;
+                weight: 400;
+            }
+
+        }
+
+        h3::after {
+            content: url(../img/decoration\ 4\ 2.svg);
+            display: block;
+            clear: both;
+        }
+
+        .list_item {
+            p {
+                font: {
+                    family: $lato;
+                    size: 16px;
+                }
+                
+                color: $color3;
+                padding-top: 9px;
+            }
+
+            padding: 8px 16px;
+            margin: 18px 0;
+        }
+
+        .item {
+            p {
+                font: {
+                    family: $yeseva;
+                    size: 21px;
+                }
+                color: $color2;
+                padding-bottom: 7px;
+            }
+
+            display: flex;
+            border-bottom: 1px solid $color2;
+            justify-content: space-between;
+        }
+
+        .special {
+            border: 1px solid $color2;
+            position: relative;
+        }
+
+        .special::before {
+            content: 'Special';
+            width: 85px;
+            height: 22px;
+            display: block;
+            color: $color1;
+            background-color: $color2;
+            position: absolute;
+            right: -1px;
+            top: -22px;
+            text-align: center;
+        }
+    }
+
+    .one {
+        margin-bottom: 54px;
+    }
+
+    .three {
+        margin-bottom: 56px;
+    }    
+}
+
+@include media (1100px) {
+    .menu {
+        // flex-wrap: nowrap;
+        justify-content: center;
+
+        .col {
+            width: 100%;
+        }
+
+        .three {
+            margin-top: 56px;
+        }
+    }
+}
+
+@include media (576px) {
+    .menu {
+        .four {
+            display: none;
+        }
+    }
+}

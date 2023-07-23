@@ -1,0 +1,107 @@
+.firstscreen {
+    background-image: linear-gradient( #F4F2F2, #ffffff), url(../img/bg2.jfif);
+    background-blend-mode: lighten;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+
+    .cook {
+        width: 50%;
+        h3 {
+            font: {
+                size: 36px;
+                family: $yeseva;
+            }
+
+            text-align: center;
+            color: $color2;
+            padding: 103px 141px 16px 185px;
+        }
+
+        h3::after {
+            content: url(../img/decoration\ 4\ 2.svg);
+            display: block;
+            clear: both;
+        }
+    
+        p {
+            font: {
+                size: 16px;
+                family: $lato;
+            }
+
+            text-align: center;
+            color: $color3;
+            padding: 0 110px 16px 154px;
+            line-height: 180%;
+        }
+
+        img {
+            display: block;
+            padding-left: 295px;
+            padding-bottom: 99px;
+
+        }
+    }
+
+    .dish {
+        width: 50%;
+        // height: 551px;
+        padding-top: 99px;
+        padding-bottom: 100px;
+        // padding-right: 75px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @include media (768px) {
+        
+        .cook {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 100px 180px;
+
+            h3 {
+                padding: 0;
+                width: 409px;
+            }
+
+            p {
+                font-size: 16px;
+                padding: 0;
+                width: 399px;
+                padding-top: 74px;
+            }
+
+            img {
+                padding: 0;
+                padding-top: 74px;
+            }
+        }
+
+
+
+        .dish {
+            display: none;
+        }
+    }
+
+    @include media (576px) {
+        .cook {
+            padding: 130px 30px;
+
+            p {
+                padding-top: 50px;
+            }
+
+            img {
+                padding-top: 50px;
+                padding-left: 180px;
+            }
+        }
+    }
+}

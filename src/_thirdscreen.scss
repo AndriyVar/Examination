@@ -1,0 +1,60 @@
+.thirdscreen {
+    background-image: url(../img/bg5.jfif);
+    background-position: center top;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    justify-content: center;
+    padding: 100px 0;
+
+    .review {
+        width: 60%;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: $color1;
+        padding: 66px 80px;
+        text-align: center;
+
+        h3 {
+            font: {
+                family: $yeseva;
+                size: 36px;
+                weight: 400;
+            }
+
+            margin-bottom: 48px;
+        }
+
+        h3::after {
+            content: url(../img/decoration\ 4\ 2\ \(2\).svg);
+            display: block;
+            padding-top: 15px;
+            clear: both;
+        }
+        
+
+        .quote {
+            font: {
+                family: $gentium;
+                size: 24px;
+            }
+
+            margin-bottom: 60px;
+        }
+
+        .cites {
+            font: {
+                family: $lato;
+                size: 20px;
+            }
+        }
+    }
+}
+
+@include media (768px) {
+    .thirdscreen {
+        padding: 100px 30px;
+        .review {
+            width: 100%;
+        }
+    }
+}

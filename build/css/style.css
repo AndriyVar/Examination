@@ -1,0 +1,558 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Lato&family=Yeseva+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contain div {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  background-image: url(../img/bg1.jfif);
+  background-position: center top;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+}
+.header h2 {
+  width: 100%;
+  font-family: "Yeseva One", cursive;
+  font-size: 90px;
+  padding: 212px 185px 169px;
+  text-shadow: 2px 2px 0px #000;
+  text-align: center;
+  color: #fff;
+}
+.header h2::after {
+  content: url(../img/decoration\ 3\ 2.svg);
+  display: block;
+  clear: both;
+}
+.header .btn {
+  margin-bottom: 63px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header button {
+  width: 218px;
+  line-height: 180%;
+  margin: 0 17px;
+  height: 80px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #fff;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+  }
+  .header h2 {
+    padding: 268px 30px 146px;
+  }
+  .header .btn {
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  .header .btn button:first-child {
+    margin-bottom: 37px;
+  }
+  .header button {
+    width: 334px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header h2 {
+    padding: 289px 30px 184px;
+    font-size: 48px;
+  }
+  .header button {
+    width: 368px;
+  }
+}
+
+.firstscreen {
+  background-image: linear-gradient(#F4F2F2, #ffffff), url(../img/bg2.jfif);
+  background-blend-mode: lighten;
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+}
+.firstscreen .cook {
+  width: 50%;
+}
+.firstscreen .cook h3 {
+  font-size: 36px;
+  font-family: "Yeseva One", cursive;
+  text-align: center;
+  color: #cc9900;
+  padding: 103px 141px 16px 185px;
+}
+.firstscreen .cook h3::after {
+  content: url(../img/decoration\ 4\ 2.svg);
+  display: block;
+  clear: both;
+}
+.firstscreen .cook p {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: #4c4c4c;
+  padding: 0 110px 16px 154px;
+  line-height: 180%;
+}
+.firstscreen .cook img {
+  display: block;
+  padding-left: 295px;
+  padding-bottom: 99px;
+}
+.firstscreen .dish {
+  width: 50%;
+  padding-top: 99px;
+  padding-bottom: 100px;
+}
+.firstscreen .dish img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .firstscreen .cook {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 180px;
+  }
+  .firstscreen .cook h3 {
+    padding: 0;
+    width: 409px;
+  }
+  .firstscreen .cook p {
+    font-size: 16px;
+    padding: 0;
+    width: 399px;
+    padding-top: 74px;
+  }
+  .firstscreen .cook img {
+    padding: 0;
+    padding-top: 74px;
+  }
+  .firstscreen .dish {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .firstscreen .cook {
+    padding: 130px 30px;
+  }
+  .firstscreen .cook p {
+    padding-top: 50px;
+  }
+  .firstscreen .cook img {
+    padding-top: 50px;
+    padding-left: 180px;
+  }
+}
+
+.secondscreen {
+  background-image: url(../img/bg3.jfif);
+  background-position: center top;
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  justify-content: end;
+  padding: 100px 76px;
+}
+.secondscreen .rectangle {
+  max-width: 630px;
+  width: 100%;
+  height: 550px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.secondscreen .rectangle h3 {
+  font-family: "Yeseva One", cursive;
+  font-size: 36px;
+  text-align: center;
+  padding: 49px 106px 26px 114px;
+}
+.secondscreen .rectangle h3::after {
+  content: url(../img/decoration\ 4\ 2\ \(2\).svg);
+  display: block;
+  clear: both;
+}
+.secondscreen .rectangle p {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  padding: 0 80px 50px;
+  text-align: center;
+}
+.secondscreen .rectangle .pic {
+  display: flex;
+  padding: 0 114px 70px;
+}
+.secondscreen .rectangle .pic img {
+  width: 115px;
+  height: 115px;
+  margin: 0 15px;
+  border-radius: 50%;
+  border: 5px solid rgba(204, 153, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .secondscreen {
+    justify-content: center;
+    padding: 100px 30px;
+  }
+  .secondscreen .rectangle {
+    padding: 50px 90px;
+  }
+  .secondscreen .rectangle h3 {
+    padding: 0;
+  }
+  .secondscreen .rectangle p {
+    padding: 0;
+  }
+  .secondscreen .rectangle .pic {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .secondscreen .rectangle {
+    padding: 65px 46px;
+  }
+  .secondscreen .rectangle h3 {
+    padding: 0;
+  }
+  .secondscreen .rectangle p {
+    padding: 0;
+  }
+  .secondscreen .rectangle .pic {
+    padding: 0;
+  }
+  .secondscreen .rectangle .pic img {
+    width: 87px;
+    height: 87px;
+  }
+}
+.menu {
+  background-image: linear-gradient(#F4F2F2, #ffffff), url(../img/bg4.png);
+  background-blend-mode: color-dodge;
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  flex-wrap: wrap;
+  padding: 100px 75px;
+  justify-content: space-evenly;
+}
+.menu .col {
+  width: calc(50% - 60px);
+}
+.menu .menu_item h3 {
+  color: #cc9900;
+  text-align: center;
+  font-family: "Yeseva One", cursive;
+  font-size: 36px;
+  font-weight: 400;
+}
+.menu .menu_item h3::after {
+  content: url(../img/decoration\ 4\ 2.svg);
+  display: block;
+  clear: both;
+}
+.menu .menu_item .list_item {
+  padding: 8px 16px;
+  margin: 18px 0;
+}
+.menu .menu_item .list_item p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #4c4c4c;
+  padding-top: 9px;
+}
+.menu .menu_item .item {
+  display: flex;
+  border-bottom: 1px solid #cc9900;
+  justify-content: space-between;
+}
+.menu .menu_item .item p {
+  font-family: "Yeseva One", cursive;
+  font-size: 21px;
+  color: #cc9900;
+  padding-bottom: 7px;
+}
+.menu .menu_item .special {
+  border: 1px solid #cc9900;
+  position: relative;
+}
+.menu .menu_item .special::before {
+  content: "Special";
+  width: 85px;
+  height: 22px;
+  display: block;
+  color: #fff;
+  background-color: #cc9900;
+  position: absolute;
+  right: -1px;
+  top: -22px;
+  text-align: center;
+}
+.menu .one {
+  margin-bottom: 54px;
+}
+.menu .three {
+  margin-bottom: 56px;
+}
+
+@media screen and (max-width: 1100px) {
+  .menu {
+    justify-content: center;
+  }
+  .menu .col {
+    width: 100%;
+  }
+  .menu .three {
+    margin-top: 56px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .menu .four {
+    display: none;
+  }
+}
+.thirdscreen {
+  background-image: url(../img/bg5.jfif);
+  background-position: center top;
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  justify-content: center;
+  padding: 100px 0;
+}
+.thirdscreen .review {
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 66px 80px;
+  text-align: center;
+}
+.thirdscreen .review h3 {
+  font-family: "Yeseva One", cursive;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+.thirdscreen .review h3::after {
+  content: url(../img/decoration\ 4\ 2\ \(2\).svg);
+  display: block;
+  padding-top: 15px;
+  clear: both;
+}
+.thirdscreen .review .quote {
+  font-family: "Gentium Book Plus", serif;
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+.thirdscreen .review .cites {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .thirdscreen {
+    padding: 100px 30px;
+  }
+  .thirdscreen .review {
+    width: 100%;
+  }
+}
+.contact {
+  background-image: linear-gradient(#F4F2F2, #ffffff), url(../img/bg2.jfif);
+  background-blend-mode: lighten;
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  padding: 100px 75px;
+  justify-content: space-between;
+  text-align: center;
+}
+.contact .contact_item {
+  width: 50%;
+}
+.contact .gallery {
+  display: flex;
+  justify-content: space-between;
+}
+.contact .gallery img {
+  width: calc(50% - 15px);
+}
+.contact .appetisers {
+  padding: 0 60px;
+}
+.contact .appetisers h3 {
+  font-family: "Yeseva One", cursive;
+  font-size: 36px;
+  font-weight: 400;
+  color: #cc9900;
+  margin-bottom: 40px;
+}
+.contact .appetisers h3::after {
+  content: url(../img/decoration\ 4\ 2.svg);
+  display: block;
+  clear: both;
+}
+.contact .appetisers p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.contact .appetisers form {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contact .appetisers form .form_item {
+  width: 50%;
+}
+.contact .appetisers form .form_item label {
+  display: block;
+  text-align: start;
+  color: #cc9900;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.contact .appetisers form .form_item input {
+  display: block;
+  width: calc(100% - 20px);
+  background-color: #fff;
+  border: 1px solid #9b9b9b;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.contact .appetisers form .form_item input:focus {
+  border: 1px solid #cc9900;
+}
+.contact .appetisers form button {
+  cursor: pointer;
+  width: 50%;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  background-color: #cc9900;
+  color: #fff;
+  padding: 10px 62px;
+  border: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .contact {
+    flex-wrap: wrap;
+    padding: 100px 30px;
+  }
+  .contact .contact_item {
+    width: 100%;
+  }
+  .contact .gallery {
+    margin-bottom: 76px;
+  }
+  .contact .appetisers {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact .gallery {
+    display: none;
+  }
+  .contact form .form_item {
+    width: 100% !important;
+  }
+  .contact form .form_item input {
+    width: 100% !important;
+  }
+  .contact form button {
+    width: 100% !important;
+  }
+}
+.footer {
+  background-color: #4c4c4c;
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  padding: 50px 72px;
+  color: #fff;
+  text-align: center;
+}
+.footer .footer_item {
+  width: calc(33.3333333333% - 34px);
+}
+.footer .footer_item h3 {
+  font-family: "Yeseva One", cursive;
+  font-size: 21px;
+  font-weight: 400;
+}
+.footer .footer_item h3::after {
+  content: url(../img/decoration\ 4\ 2\ \(2\).svg);
+  display: block;
+  margin-top: 24px;
+  clear: both;
+}
+.footer .footer_item p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 180%;
+}
+.footer .first_item p {
+  margin-top: 58px;
+}
+.footer .second_item .text {
+  margin: 37px 0 20px;
+}
+.footer .third_item p {
+  padding: 30px 80px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+  .footer .footer_item {
+    width: 100%;
+  }
+  .footer .second_item {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer .first_item {
+    display: none;
+  }
+  .footer .second_item {
+    margin-top: 0;
+    margin-bottom: 200px;
+  }
+  .footer .third_item p {
+    padding: 30px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

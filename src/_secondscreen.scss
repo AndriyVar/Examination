@@ -1,0 +1,111 @@
+.secondscreen {
+    background-image: url(../img/bg3.jfif);
+    background-position: center top;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    justify-content: end;
+    padding: 100px 76px;
+
+    .rectangle {
+        max-width: 630px;
+        width: 100%;
+        height: 550px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: $color1;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        h3 {
+            font: {
+                family: $yeseva;
+                size: 36px;
+            }
+
+            text-align: center;
+            padding: 49px 106px 26px 114px;
+        }
+
+        h3::after {
+            content: url(../img/decoration\ 4\ 2\ \(2\).svg);
+            display: block;
+            clear: both;
+        }
+
+        p {
+            font: {
+                size: 16px;
+                family: $lato;
+            }
+
+            padding: 0 80px 50px;
+            text-align: center;
+        }
+
+        .pic {
+            display: flex;
+            padding: 0 114px 70px;
+
+            img {
+                width: 115px;
+                height: 115px;
+                margin: 0 15px;
+                border-radius: 50%;
+                border: 5px solid rgba(204, 153, 0, 0.50);
+                
+            }
+        }
+    }
+}
+
+@include media (768px) {
+    .secondscreen {
+        justify-content: center;
+        padding: 100px 30px;
+
+        .rectangle {
+            padding: 50px 90px;
+
+            h3 {
+                padding: 0;
+            }
+
+            p {
+                padding: 0;
+            }
+
+            .pic {
+                padding: 0;
+            }
+        }
+
+
+        
+    }
+}
+
+@include media (576px) {
+    .secondscreen {
+
+        .rectangle {
+            padding: 65px 46px;
+
+            h3 {
+                padding: 0;
+            }
+
+            p {
+                padding: 0;
+            }
+
+            .pic {
+                padding: 0;
+                img {
+                    width: 87px;
+                    height: 87px;
+                }
+            }
+        }
+    }
+}
